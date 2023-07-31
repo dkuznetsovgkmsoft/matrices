@@ -1,0 +1,6 @@
+/bin
+/build
+/dependencies/build/
+/dependencies/vcpkg/
+/lib/
+/scripts/__pycache__
