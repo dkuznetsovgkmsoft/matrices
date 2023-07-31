@@ -128,17 +128,17 @@ namespace matrices {
         [[nodiscard]] internal_type& operator()(const index_type& row, const index_type& col)
         {
             if (row >= rows_count || col >= columns_count) {
-                std::out_of_range("Invalid row/column index");
+                std::out_of_range("Invalid row column index");
             }
-            return data.at(row * Columns + col);
+            return data[row * Columns + col];
         }
 
         [[nodiscard]] internal_type operator()(const index_type& row, const index_type& col) const
         {
             if (row >= rows_count || col >= columns_count) {
-                std::out_of_range("Invalid row/column index");
+                std::out_of_range("Invalid row column index");
             }
-            return data.at(row * Columns + col);
+            return data[row * Columns + col];
         }
 
         [[nodiscard]] internal_type& operator[](const index_type& index)
